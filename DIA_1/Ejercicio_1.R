@@ -77,7 +77,7 @@ summary(datos_mora$trmm_3)
 
 #2.6 Graficas barras
 
-
+boxplot(datos_mora$trmm_3)
 
 
 
