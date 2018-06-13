@@ -76,8 +76,7 @@ summary(datos_mora$PrecAcc_2)
 summary(datos_mora$trmm_3)
 
 #2.6 Graficas barras
-
-boxplot(datos_mora$trmm_3)
+boxplot(datos_mora$trmm_3, main="Box Plot de Preciptacion del tercer mes antes de cosecha", col= "blue")
 
 
 
