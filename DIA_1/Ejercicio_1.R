@@ -61,13 +61,22 @@ levels(datos_mora$Nar) <- c("Caldas", "No_Caldas")
 
 #valor promedio
 valor_promedio_yield <- mean(datos_mora$Yield)
+#valor maximo
+valor_maximo <- max(datos_mora$Yield)
+#valor minimo
+valor_minimo <- min(datos_mora$Yield)
+#varianza
+valor_varianza_yield <- var(datos_mora$Yield) 
+#desviacion estandar 
+valor_desviEsta_yield <- sd(datos_mora$Yield) 
 #mediana
 valor_mediana_yield <- median(datos_mora$Yield)
 #desviacion estandar
 valor_desviacionEstandar_yield <- sd(datos_mora$Yield)
 #varianza
 valor_varianza_yield <- var(datos_mora$Yield) 
-
+#histograma
+histo_yield <- hist(datos_mora$Yield, main ="Histograma del rendimiento", col= "yellow")
 
 
 #2.5 Aplicacion de la funcion summary
@@ -80,7 +89,7 @@ boxplot(datos_mora$trmm_3, main="Box plot de preciptacion del tercer mes antes d
 
 
 
-
+#3. 
 
 
 
