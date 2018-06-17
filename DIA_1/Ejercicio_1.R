@@ -84,13 +84,30 @@ summary(datos_mora$Yield)
 summary(datos_mora$PrecAcc_2)
 summary(datos_mora$trmm_3)
 
-#2.6 Graficas barras
-boxplot(datos_mora$trmm_3, main="Box plot de preciptacion del tercer mes antes de cosecha", col= "blue")
+
+#3. Multiple linear regreession 
+
+fit <- lm (Yield ~ AB_Thorn + intDrain + slope, data = datos_mora)
+summary(fit)
+
+#3.1 Coeficientes del modelo
+
+#Pr valores mas pequenhos que 0.05 significa que la variable 
+#incide en el modelo. En este caso, Slope se no incide en cambio
+#slope si incide.
+
+coefficients(fit)
+#R squared multiplo Multiple R-squared es 0.3998
+#https://data.library.virginia.edu/diagnostic-plots/
+#Residuos Non-linear relationship
+#Normal si los residuos son normalmente distribuidos
+#Scale location si los residuos estan distribuidos
+#igual que los predictores, son iguales si se ve una linea
+#recta
+#Los casos mas influyentes en el analisis.
 
 
-
-#3. 
-
+plot(fit)
 
 
 
